@@ -2,9 +2,9 @@ from telethon import TelegramClient, events
 import json
 import requests
 
-APP_ID=2744783
-API_HASH='43857ea58ef2678d91e035db7825d54b'
-BOTT='1965629218:AAGZBOEik3tClqKhqD__vZ3SDLL3-h47M7w'
+APP_ID=12625817
+API_HASH='114b6234ce7a1ab51f1ad356f43e5cff'
+BOTT='5209532924:AAFdX8Brpuw44t_jyX_jDV3wGFFtIq-guck'
 
 
 bot = TelegramClient('bot', APP_ID, APP_HASH).start(bot_token=BOTT)
@@ -22,12 +22,12 @@ def staat(qq):
         "inline_keyboard": [
             [
                 {
-                    "text": "➕ Add me to your Group",
-                    "url": "https://t.me/UBCoronaBot?startgroup=new"
+                    "text": "Add me to your Group",
+                    "url": ""
                 }, 
                 {
-                    "text": "🔊 Channel",
-                    "url": "https://t.me/UvinduBro"
+                    "text": "Group",
+                    "url": ""
                 }
             ]
         ]
@@ -53,7 +53,7 @@ def staa():
     global_recovered    = str(jsondata['data']['global_recovered'])
 
     textt = str(
-                    '<b>CURRENT SITUATION</b>' + '\n' + '\n' + '<b>' +
+                    '<b>Covid19 CURRENT SITUATION</b>' + '\n' + '\n' + '<b>' +
                     update_date_time + ' වන විට</b>' + '\n' + '\n' +
                     '<b>🇱🇰 ශ්‍රී ලංකාවේ තත්ත්වය</b>' + '\n' + '\n'  +
                     '🤒 තහවුරු කරනලද රෝගීන් සංඛ්‍යාව(සමුච්චිත) = ' + '<code>' +
@@ -72,7 +72,7 @@ def staa():
                     global_deaths + '</code>' + '\n' + '🙂 සුවය ලැබූ සංඛ්‍යාව = ' '<code>'  +
                     global_recovered + '</code>' + '\n' + '\n' + '\n' +
                     '✅ සියලු තොරතුරු රජයේ සහ පිලිගත් මුලාශ්‍ර මගිනි' + '\n' +
-                    '~ @UvinduBro 🇱🇰 ~')
+                    '~ @Omindu 🇱🇰 ~')
     return textt
 
 
