@@ -2,9 +2,9 @@ from telethon import TelegramClient, events
 import json
 import requests
 
-APP_ID =
-API_HASH = ''
-BOTT = ''
+APP_ID = '12625817'
+API_HASH = '114b6234ce7a1ab51f1ad356f43e5cff'
+BOTT = '5209532924:AAFdX8Brpuw44t_jyX_jDV3wGFFtIq-guck'
 
 bot = TelegramClient('bot', APP_ID, API_HASH).start(bot_token = BOTT)
 
@@ -13,13 +13,13 @@ def startt (qq):
     data = {
         "chat_id" : str (qq)
         "photo" : "http://newscenter.lk/wp-content/uploads/2020/11/UPDATE_a-700x394-2.jpg"
-        "caption" : "ශ්‍රී ලංකාවේ කොරෝනා තතු එසැනින් දැනගන්න. @UBCoronaBot Group එකට Add කරගත් පසු ස්වයංක්‍රියව නවතම කොරෝනා තතු ලබාගත හැක. \n වැඩි විස්තර සදහා /help භාවිතා කරන්න."
+        "caption" : "ශ්‍රී ලංකාවේ කොරෝනා තතු එසැනින් දැනගන්න. @CoronaBot Group එකට Add කරගත් පසු ස්වයංක්‍රියව නවතම කොරෝනා තතු ලබාගත හැක. \n වැඩි විස්තර සදහා /help භාවිතා කරන්න."
         "parse_mode" : HTML
         "reply_markup" : {
             "inline_keyboard":[
                 {
                     "text" : "Updates Channel"
-                    "URL" : "https://t.me/UvinduBro"
+                    "URL" : ""
                 }
             ]
         }
